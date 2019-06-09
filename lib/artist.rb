@@ -19,10 +19,10 @@ class Artist
     @songs = []
   end
 
-  def add_songs(song)
+   def add_song(song)
     @songs << song
     song.artist = self
-    songs.each { |song| add_songs(song) }
+    songs.each { |song| add_song(song) }
   end
 
 end
